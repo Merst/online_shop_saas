@@ -445,7 +445,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DsLXlT3_e8OGSrHaLnVw-122" value="creation_date &amp;lt;TIMESTAMP&amp;gt; NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="DsLXlT3_e8OGSrHaLnVw-120">
+        <mxCell id="DsLXlT3_e8OGSrHaLnVw-122" value="created_at timestamp NOT NULL" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="DsLXlT3_e8OGSrHaLnVw-120">
           <mxGeometry x="30" width="260" height="30" as="geometry">
             <mxRectangle width="260" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -458,7 +458,7 @@
             <mxRectangle width="30" height="30" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="DsLXlT3_e8OGSrHaLnVw-125" value="completion_date &amp;lt;TIMESTAMP&amp;gt;" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="DsLXlT3_e8OGSrHaLnVw-123">
+        <mxCell id="DsLXlT3_e8OGSrHaLnVw-125" value="completed_at timestamp" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;whiteSpace=wrap;html=1;" vertex="1" parent="DsLXlT3_e8OGSrHaLnVw-123">
           <mxGeometry x="30" width="260" height="30" as="geometry">
             <mxRectangle width="260" height="30" as="alternateBounds" />
           </mxGeometry>
@@ -880,8 +880,7 @@
             <Array as="points">
               <mxPoint x="-282" y="370" />
               <mxPoint x="-110" y="370" />
-              <mxPoint x="-110" y="315" />
-              <mxPoint x="-80" y="315" />
+              <mxPoint x="-110" y="325" />
             </Array>
           </mxGeometry>
         </mxCell>

@@ -23,7 +23,7 @@ CREATE TABLE "Customer" (
     "locale" customer_locale NOT NULL,
     "created_at" timestamp NOT NULL,
     "last_login" timestamp NOT NULL,
-    "email_validated" boolean,
+    "email_validated" boolean DEFAULT FALSE,
     CONSTRAINT "customer.pkey" PRIMARY KEY ("id")
 );
 
@@ -66,7 +66,6 @@ CREATE TABLE "Category" (
     CONSTRAINT "fk_parent_category" FOREIGN KEY (parent_category_id) REFERENCES category(id)
 );
 
--- TODO
 CREATE TABLE "Supplier" (
     "id" uuid DEFAULT gen_random_uuid(),
     "name" text NOT NULL,
@@ -110,8 +109,8 @@ CREATE TABLE "Payment" (
     "order_id" uuid NOT NULL,
     "method" payment_method NOT NULL,
     "status" payment_status NOT NULL,
-    "creation_date" timestamp NOT NULL,
-    "completion_date" timestamp NOT NULL,
+    "created_at" timestamp NOT NULL,
+    "completed_at" timestamp NOT NULL,
     CONSTRAINT "payment.pkey" PRIMARY KEY ("id"),
     CONSTRAINT "fk_order" FOREIGN KEY (order_id) REFERENCES order(id)
 );
