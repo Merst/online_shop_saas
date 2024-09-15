@@ -11,27 +11,25 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.merst.online_shop_saas.TestDataUtil;
-import com.merst.online_shop_saas.domain.Supplier;
+import com.merst.online_shop_saas.domain.Category;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class CategoryRepositoryIntegrationTests {
-    private SupplierRepository underTest;
+    private CategoryRepository underTest;
 
     @Autowired
-    public SupplierRepositoryIntegrationTests(SupplierRepository underTest) {
+    public CategoryRepositoryIntegrationTests(CategoryRepository underTest) {
         this.underTest = underTest;
     }
 
     @Test
-    public void supplierProperlyCreatedAndRecalled() {
-        Supplier supplier = TestDataUtil.createDummySupplierA();
-        underTest.save(supplier);
-        Optional<Supplier> result = underTest.findById(supplier.getId());
+    public void categoryProperlyCreatedAndRecalled() {
+        Category category = TestDataUtil.createDummyCategoryA();
+        underTest.save(category);
+        Optional<Category> result = underTest.findById(category.getId());
         assertThat(result).isPresent();
-        assertThat(result.get()).isEqualTo(supplier);
+        assertThat(result.get()).isEqualTo(category);
     }
 }
-
-
