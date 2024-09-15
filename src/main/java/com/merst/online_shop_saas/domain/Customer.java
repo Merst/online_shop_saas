@@ -8,14 +8,24 @@ import lombok.NoArgsConstructor;
 import java.sql.Timestamp;
 import java.util.UUID;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@Entity
+@Table(name= "customer")
 public class Customer {
+    @Id
     private UUID id;
+    
     private String firstName;
+    @Column(nullable= true)
     private String middleName;
     private String lastName;
     private String email;

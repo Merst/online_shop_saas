@@ -1,9 +1,11 @@
 package com.merst.online_shop_saas;
 
+import java.sql.Timestamp;
 import java.util.UUID;
 
 import com.merst.online_shop_saas.domain.Address;
 import com.merst.online_shop_saas.domain.Category;
+import com.merst.online_shop_saas.domain.Customer;
 import com.merst.online_shop_saas.domain.Product;
 import com.merst.online_shop_saas.domain.Supplier;
 
@@ -49,6 +51,20 @@ public final class TestDataUtil {
             .isAvailable(true)
             .saleMultiplier(1)
             .description("It's fun.")
+            .build();
+    }
+
+    public static Customer createDummyCustomerA() {
+        return Customer.builder()
+            .id(UUID.fromString("10e999cd-8308-4772-a0a7-88ddcd40ea18"))
+            .firstName("John")
+            .middleName(null)
+            .lastName("Doe")
+            .email("johndoe@gmail.com")
+            .locale("EN")
+            .createdAt(new Timestamp(424242))
+            .lastLogin(new Timestamp (424243))
+            .emailValidated(true)
             .build();
     }
 }

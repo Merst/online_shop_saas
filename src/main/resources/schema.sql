@@ -11,7 +11,7 @@ CREATE TYPE payment_status AS ENUM ('Complete', 'Pending', 'Incomplete', 'Refund
 CREATE TABLE IF NOT EXISTS "customer" (
     "id" uuid NOT NULL ,
     "first_name" text NOT NULL,
-    "middle_name" text NOT NULL,
+    "middle_name" text,
     "last_name" text NOT NULL,
     "email" text NOT NULL,
     "locale" customer_locale NOT NULL,
