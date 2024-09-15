@@ -1,5 +1,10 @@
 package com.merst.online_shop_saas.repositories;
 
-public class ReviewRepository {
-    
-}
+import java.util.UUID;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.merst.online_shop_saas.domain.Review;
+
+@Repository
+public interface ReviewRepository extends CrudRepository<Review, UUID> {}

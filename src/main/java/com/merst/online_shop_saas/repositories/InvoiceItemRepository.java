@@ -1,5 +1,10 @@
 package com.merst.online_shop_saas.repositories;
 
-public class InvoiceItemRepository {
-    
-}
+import java.util.UUID;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.merst.online_shop_saas.domain.InvoiceItem;
+
+@Repository
+public interface InvoiceItemRepository extends CrudRepository<InvoiceItem, UUID> {}

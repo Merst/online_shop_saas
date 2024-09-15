@@ -7,5 +7,4 @@ import org.springframework.stereotype.Repository;
 import com.merst.online_shop_saas.domain.Supplier;
 
 @Repository
-public interface SupplierRepository extends CrudRepository<Supplier, UUID>{
-}
+public interface SupplierRepository extends CrudRepository<Supplier, UUID> {}
