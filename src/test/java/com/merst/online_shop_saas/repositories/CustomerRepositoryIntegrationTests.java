@@ -11,7 +11,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import com.merst.online_shop_saas.TestDataUtil;
-import com.merst.online_shop_saas.domain.Customer;
+import com.merst.online_shop_saas.domain.entities.Customer;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)

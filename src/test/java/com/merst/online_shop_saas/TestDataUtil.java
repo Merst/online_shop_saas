@@ -3,17 +3,17 @@ package com.merst.online_shop_saas;
 import java.sql.Timestamp;
 import java.util.UUID;
 
-import com.merst.online_shop_saas.domain.Address;
-import com.merst.online_shop_saas.domain.Cart;
-import com.merst.online_shop_saas.domain.CartItem;
-import com.merst.online_shop_saas.domain.Category;
-import com.merst.online_shop_saas.domain.Customer;
-import com.merst.online_shop_saas.domain.Invoice;
-import com.merst.online_shop_saas.domain.InvoiceItem;
-import com.merst.online_shop_saas.domain.Payment;
-import com.merst.online_shop_saas.domain.Product;
-import com.merst.online_shop_saas.domain.Review;
-import com.merst.online_shop_saas.domain.Supplier;
+import com.merst.online_shop_saas.domain.entities.Address;
+import com.merst.online_shop_saas.domain.entities.Cart;
+import com.merst.online_shop_saas.domain.entities.CartItem;
+import com.merst.online_shop_saas.domain.entities.Category;
+import com.merst.online_shop_saas.domain.entities.Customer;
+import com.merst.online_shop_saas.domain.entities.Invoice;
+import com.merst.online_shop_saas.domain.entities.InvoiceItem;
+import com.merst.online_shop_saas.domain.entities.Payment;
+import com.merst.online_shop_saas.domain.entities.Product;
+import com.merst.online_shop_saas.domain.entities.Review;
+import com.merst.online_shop_saas.domain.entities.Supplier;
 
 public final class TestDataUtil {
     

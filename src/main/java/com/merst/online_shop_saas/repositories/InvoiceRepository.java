@@ -4,7 +4,7 @@ import java.util.UUID;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import com.merst.online_shop_saas.domain.Invoice;
+import com.merst.online_shop_saas.domain.entities.Invoice;
 
 @Repository
 public interface InvoiceRepository extends CrudRepository<Invoice, UUID> {}
